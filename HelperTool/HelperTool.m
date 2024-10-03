@@ -241,6 +241,24 @@ static NSString * kLicenseKeyDefaultsKey = @"licenseKey";
     reply(error);
 }
 
+- (void)copyFile:(NSString *)srcFile withDest:(NSString *)destFile authorization:(NSData *)authData withReply:(void(^)(NSError * error))reply
+{
+    NSError *   error;
+    
+    error = [self checkAuthorization:authData command:_cmd];
+    
+    if (error == nil)
+        {
+        [[NSFileManager defaultManager] copyItemAtPath:srcFile toPath:destFile error:&error];
+        }
+    else
+        {
+        
+        }
+    
+    reply(error);
+}
+
 - (void)bindToLowNumberPortAuthorization:(NSData *)authData withReply:(void(^)(NSError * error, NSFileHandle * ipv4Handle, NSFileHandle * ipv6Handle))reply
     // Part of the HelperToolProtocol.  Binds two sockets (TCPv4 and TCPv6) to port 80 and returns
     // a reference to them to the client.  Note that we just create and bind the sockets and nothing 

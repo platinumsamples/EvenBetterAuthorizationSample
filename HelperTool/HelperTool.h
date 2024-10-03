@@ -50,7 +50,7 @@
 // kHelperToolMachServiceName is the Mach service name of the helper tool.  Note that the value 
 // here has to match the value in the MachServices dictionary in "HelperTool-Launchd.plist".
 
-#define kHelperToolMachServiceName @"com.example.apple-samplecode.EBAS.HelperTool"
+#define kHelperToolMachServiceName @"com.kitplugins.InstallManager.HelperTool"
 
 // HelperToolProtocol is the NSXPCConnection-based protocol implemented by the helper tool 
 // and called by the app.
@@ -78,6 +78,9 @@
 - (void)writeLicenseKey:(NSString *)licenseKey authorization:(NSData *)authData withReply:(void(^)(NSError * error))reply;
     // Writes a new license key.  licenseKey is the new license key string.  authData must be 
     // an AuthorizationExternalForm embedded in an NSData.
+
+- (void)copyFile:(NSString *)srcFile withDest:(NSString *)destFile authorization:(NSData *)authData withReply:(void(^)(NSError * error))reply;
+    // Copy file..
 
 - (void)bindToLowNumberPortAuthorization:(NSData *)authData withReply:(void(^)(NSError * error, NSFileHandle * ipv4Handle, NSFileHandle * ipv6Handle))reply;
     // This command imagines an app that contains an embedded web server.  A web server has to 

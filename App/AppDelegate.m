@@ -207,7 +207,7 @@
     
     success = SMJobBless(
         kSMDomainSystemLaunchd,
-        CFSTR("com.example.apple-samplecode.EBAS.HelperTool"),
+        CFSTR("com.kitplugins.InstallManager.HelperTool"),
         self->_authRef,
         &error
     );

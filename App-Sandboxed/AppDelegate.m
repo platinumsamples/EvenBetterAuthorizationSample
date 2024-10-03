@@ -261,6 +261,29 @@
     }];
 }
 
+- (IBAction)copyFileAction:(id)sender
+{
+    #pragma unused(sender)
+    [self connectAndExecuteCommandBlock:^(NSError * connectError) {
+        if (connectError != nil) {
+            [self logError:connectError];
+        } else {
+            [[self.helperToolConnection remoteObjectProxyWithErrorHandler:^(NSError * proxyError) {
+                [self logError:proxyError];
+            }] getVersionWithReply:^(NSString *version) {
+                [self logWithFormat:@"version = %@\n", version];
+            }];
+        }
+    }];
+}
+
+/*
+ 
+ [copyFile:@"/Users/railjonrogut/Library/Audio/Plug-Ins/Components/TEST.txt.zip" withDest: @"/Library/Audio/Plug-Ins/Components/TEST.txt.zip"]  {
+ [self logWithFormat:@"Copied file\n"];
+ 
+ */
+
 - (IBAction)getVersionAction:(id)sender
     // Called when the user clicks the Get Version button.  This is the simplest form of
     // NSXPCConnection request because it doesn't require any authorization.

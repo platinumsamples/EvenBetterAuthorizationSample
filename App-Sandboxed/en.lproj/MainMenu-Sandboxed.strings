@@ -169,3 +169,6 @@
 
 /* Class = "NSButtonCell"; title = "Write License"; ObjectID = "472"; */
 "472.title" = "Write License";
+
+/* Class = "NSButtonCell"; title = "Copy File"; ObjectID = "500"; */
+"500.title" = "Copy File";

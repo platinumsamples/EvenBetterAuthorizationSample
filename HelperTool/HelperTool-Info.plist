@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.example.apple-samplecode.EBAS.HelperTool</string>
+	<string>com.kitplugins.InstallManager.HelperTool</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -12,7 +12,7 @@
 	<string>1.0</string>
 	<key>SMAuthorizedClients</key>
 	<array>
-		<string>identifier "com.example.apple-samplecode.EBAS.App" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: Brendon Blackwell (X8M2CG34BT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+		<string>identifier &quot;com.kitplugins.InstallManager.XPCService&quot; and anchor apple generic and certificate leaf[subject.CN] = &quot;Apple Development: Shivaun O&apos;Brien (S6JK4AXXMW)&quot; and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 	</array>
 </dict>
 </plist>

@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		E4AD7A881608DB4A00F594A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4ED7B8315E79B83002AD912 /* Cocoa.framework */; };
 		E4AD7A8F1608DB4A00F594A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7A8E1608DB4A00F594A2 /* AppDelegate.m */; };
 		E4AD7A911608DB4A00F594A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7A901608DB4A00F594A2 /* main.m */; };
-		E4AD7AA91608DC4C00F594A2 /* com.example.apple-samplecode.EBAS.HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.EBAS.HelperTool */; };
-		E4AD7AAB1608DCFC00F594A2 /* com.example.apple-samplecode.EBAS.XPCService.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4C32DCB16023A97002AFAB3 /* com.example.apple-samplecode.EBAS.XPCService.xpc */; };
+		E4AD7AA91608DC4C00F594A2 /* com.kitplugins.InstallManager.HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.kitplugins.InstallManager.HelperTool */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E4AD7AAB1608DCFC00F594A2 /* com.kitplugins.InstallManager.XPCService.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4C32DCB16023A97002AFAB3 /* com.kitplugins.InstallManager.XPCService.xpc */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E4AD7AAC1608DD8000F594A2 /* MainMenu-Sandboxed.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4AD7AAE1608DD8000F594A2 /* MainMenu-Sandboxed.xib */; };
 		E4AD7AB71609093B00F594A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4AD7AB91609093B00F594A2 /* InfoPlist.strings */; };
 		E4AD7AC216090A3300F594A2 /* XPCService.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7AA11608DBEC00F594A2 /* XPCService.m */; };
@@ -20,7 +20,7 @@
 		E4C32DCC16023A97002AFAB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372FB15E7D4FE007554D3 /* Foundation.framework */; };
 		E4C32DE516024494002AFAB3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
 		E4C32DE616024498002AFAB3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
-		E4C32DEA16024D51002AFAB3 /* com.example.apple-samplecode.EBAS.HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.EBAS.HelperTool */; };
+		E4C32DEA16024D51002AFAB3 /* com.kitplugins.InstallManager.HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.kitplugins.InstallManager.HelperTool */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E4C32E781603536C002AFAB3 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CBCCEB15EBBB8D0081DF5C /* Common.m */; };
 		E4C372F815E7D4D4007554D3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
 		E4C372FA15E7D4D8007554D3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
@@ -70,7 +70,7 @@
 			dstPath = Contents/XPCServices;
 			dstSubfolderSpec = 1;
 			files = (
-				E4AD7AAB1608DCFC00F594A2 /* com.example.apple-samplecode.EBAS.XPCService.xpc in CopyFiles */,
+				E4AD7AAB1608DCFC00F594A2 /* com.kitplugins.InstallManager.XPCService.xpc in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +80,7 @@
 			dstPath = Contents/Library/LaunchServices;
 			dstSubfolderSpec = 1;
 			files = (
-				E4AD7AA91608DC4C00F594A2 /* com.example.apple-samplecode.EBAS.HelperTool in CopyFiles */,
+				E4AD7AA91608DC4C00F594A2 /* com.kitplugins.InstallManager.HelperTool in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			dstPath = Contents/Library/LaunchServices;
 			dstSubfolderSpec = 1;
 			files = (
-				E4C32DEA16024D51002AFAB3 /* com.example.apple-samplecode.EBAS.HelperTool in CopyFiles */,
+				E4C32DEA16024D51002AFAB3 /* com.kitplugins.InstallManager.HelperTool in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +106,8 @@
 		E40FA42517ABE62000F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		E40FA42617ABE62000F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "de.lproj/MainMenu-Sandboxed.strings"; sourceTree = "<group>"; };
 		E40FA42717ABE62100F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E40FA42817ABE62200F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E40FA42917ABE62300F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Common.strings; sourceTree = "<group>"; };
+		E40FA42817ABE62200F6CB03 /* de */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E40FA42917ABE62300F6CB03 /* de */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Common.strings; sourceTree = "<group>"; };
 		E456726C15E7E4B80050ECAB /* Uninstall.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Uninstall.sh; sourceTree = "<group>"; };
 		E4AD7A861608DB4A00F594A2 /* EvenBetterAuthorizationSample-Sandboxed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EvenBetterAuthorizationSample-Sandboxed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AD7A8A1608DB4A00F594A2 /* App-Sandboxed-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "App-Sandboxed-Info.plist"; sourceTree = "<group>"; };
@@ -118,9 +118,9 @@
 		E4AD7A9F1608DBEC00F594A2 /* XPCService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "XPCService-Info.plist"; sourceTree = "<group>"; };
 		E4AD7AA01608DBEC00F594A2 /* XPCService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPCService.h; sourceTree = "<group>"; };
 		E4AD7AA11608DBEC00F594A2 /* XPCService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPCService.m; sourceTree = "<group>"; };
-		E4AD7AB81609093B00F594A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E4AD7AB81609093B00F594A2 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4C32DC516023990002AFAB3 /* App-Sandboxed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "App-Sandboxed.entitlements"; sourceTree = "<group>"; };
-		E4C32DCB16023A97002AFAB3 /* com.example.apple-samplecode.EBAS.XPCService.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "com.example.apple-samplecode.EBAS.XPCService.xpc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4C32DCB16023A97002AFAB3 /* com.kitplugins.InstallManager.XPCService.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.kitplugins.InstallManager.XPCService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4C372E315E7CC10007554D3 /* HelperTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelperTool-Info.plist"; sourceTree = "<group>"; };
 		E4C372E415E7CC10007554D3 /* HelperTool-Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelperTool-Launchd.plist"; sourceTree = "<group>"; };
 		E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
@@ -130,9 +130,9 @@
 		E4CBCCE615EBA7550081DF5C /* HelperTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperTool.m; sourceTree = "<group>"; };
 		E4CBCCE915EBB50D0081DF5C /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		E4CBCCEB15EBBB8D0081DF5C /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
-		E4CBCCF115EBC55F0081DF5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Common.strings; sourceTree = "<group>"; };
+		E4CBCCF115EBC55F0081DF5C /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Common.strings; sourceTree = "<group>"; };
 		E4CBCD2B15EC191D0081DF5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.EBAS.HelperTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "com.example.apple-samplecode.EBAS.HelperTool"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4CD036715E7A2C300FDC22C /* com.kitplugins.InstallManager.HelperTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.kitplugins.InstallManager.HelperTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CD036C15E7A2C300FDC22C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4ED7B7F15E79B83002AD912 /* EvenBetterAuthorizationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvenBetterAuthorizationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4ED7B8315E79B83002AD912 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -251,8 +251,8 @@
 			isa = PBXGroup;
 			children = (
 				E4ED7B7F15E79B83002AD912 /* EvenBetterAuthorizationSample.app */,
-				E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.EBAS.HelperTool */,
-				E4C32DCB16023A97002AFAB3 /* com.example.apple-samplecode.EBAS.XPCService.xpc */,
+				E4CD036715E7A2C300FDC22C /* com.kitplugins.InstallManager.HelperTool */,
+				E4C32DCB16023A97002AFAB3 /* com.kitplugins.InstallManager.XPCService.xpc */,
 				E4AD7A861608DB4A00F594A2 /* EvenBetterAuthorizationSample-Sandboxed.app */,
 			);
 			name = Products;
@@ -320,7 +320,7 @@
 			);
 			name = XPCService;
 			productName = XPCService;
-			productReference = E4C32DCB16023A97002AFAB3 /* com.example.apple-samplecode.EBAS.XPCService.xpc */;
+			productReference = E4C32DCB16023A97002AFAB3 /* com.kitplugins.InstallManager.XPCService.xpc */;
 			productType = "com.apple.product-type.bundle";
 		};
 		E4CD036615E7A2C300FDC22C /* HelperTool */ = {
@@ -336,7 +336,7 @@
 			);
 			name = HelperTool;
 			productName = HelperTool;
-			productReference = E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.EBAS.HelperTool */;
+			productReference = E4CD036715E7A2C300FDC22C /* com.kitplugins.InstallManager.HelperTool */;
 			productType = "com.apple.product-type.tool";
 		};
 		E4ED7B7E15E79B83002AD912 /* App */ = {
@@ -364,25 +364,12 @@
 		E4ED7B7615E79B83002AD912 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
-				TargetAttributes = {
-					E4AD7A851608DB4A00F594A2 = {
-						DevelopmentTeam = 9ZD5XCNS2R;
-					};
-					E4C32DCA16023A97002AFAB3 = {
-						DevelopmentTeam = 9ZD5XCNS2R;
-					};
-					E4CD036615E7A2C300FDC22C = {
-						DevelopmentTeam = 9ZD5XCNS2R;
-					};
-					E4ED7B7E15E79B83002AD912 = {
-						DevelopmentTeam = 9ZD5XCNS2R;
-					};
-				};
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
 			};
 			buildConfigurationList = E4ED7B7915E79B83002AD912 /* Build configuration list for PBXProject "EvenBetterAuthorizationSample" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -447,8 +434,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4C32E781603536C002AFAB3 /* Common.m in Sources */,
-				E4AD7AC216090A3300F594A2 /* XPCService.m in Sources */,
 				E4AD7AC316090A3600F594A2 /* main.m in Sources */,
+				E4AD7AC216090A3300F594A2 /* XPCService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,13 +533,20 @@
 		E4AD7A921608DB4A00F594A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = "App-Sandboxed/App-Sandboxed.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LTN37FGX4L;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "App-Sandboxed/App-Sandboxed-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitplugins.InstallManager.App;
 				PRODUCT_NAME = "EvenBetterAuthorizationSample-Sandboxed";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -561,13 +555,20 @@
 		E4AD7A931608DB4A00F594A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = "App-Sandboxed/App-Sandboxed.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LTN37FGX4L;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "App-Sandboxed/App-Sandboxed-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitplugins.InstallManager.App;
 				PRODUCT_NAME = "EvenBetterAuthorizationSample-Sandboxed";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -576,12 +577,20 @@
 		E4C32DD716023A97002AFAB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LTN37FGX4L;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "App-Sandboxed/XPCService/XPCService-Info.plist";
 				MACH_O_TYPE = mh_execute;
-				PRODUCT_NAME = "com.example.apple-samplecode.EBAS.XPCService";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitplugins.InstallManager.XPCService;
+				PRODUCT_NAME = com.kitplugins.InstallManager.XPCService;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = xpc;
 			};
 			name = Debug;
@@ -589,12 +598,20 @@
 		E4C32DD816023A97002AFAB3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LTN37FGX4L;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "App-Sandboxed/XPCService/XPCService-Info.plist";
 				MACH_O_TYPE = mh_execute;
-				PRODUCT_NAME = "com.example.apple-samplecode.EBAS.XPCService";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitplugins.InstallManager.XPCService;
+				PRODUCT_NAME = com.kitplugins.InstallManager.XPCService;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = xpc;
 			};
 			name = Release;
@@ -602,9 +619,14 @@
 		E4CD036F15E7A2C300FDC22C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = LTN37FGX4L;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "HelperTool/HelperTool-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				OTHER_LDFLAGS = (
 					"-sectcreate",
 					__TEXT,
@@ -615,18 +637,26 @@
 					__launchd_plist,
 					"HelperTool/HelperTool-Launchd.plist",
 				);
-				PRODUCT_NAME = "com.example.apple-samplecode.EBAS.HelperTool";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitplugins.InstallManager.HelperTool;
+				PRODUCT_NAME = com.kitplugins.InstallManager.HelperTool;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SYMROOT = build;
 			};
 			name = Debug;
 		};
 		E4CD037015E7A2C300FDC22C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = LTN37FGX4L;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "HelperTool/HelperTool-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				OTHER_LDFLAGS = (
 					"-sectcreate",
 					__TEXT,
@@ -637,33 +667,50 @@
 					__launchd_plist,
 					"HelperTool/HelperTool-Launchd.plist",
 				);
-				PRODUCT_NAME = "com.example.apple-samplecode.EBAS.HelperTool";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitplugins.InstallManager.HelperTool;
+				PRODUCT_NAME = com.kitplugins.InstallManager.HelperTool;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SYMROOT = build;
 			};
 			name = Release;
 		};
 		E4ED7B8E15E79B83002AD912 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -684,6 +731,7 @@
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 			};
@@ -692,24 +740,37 @@
 		E4ED7B8F15E79B83002AD912 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -738,11 +799,20 @@
 		E4ED7B9115E79B83002AD912 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = LTN37FGX4L;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "App/App-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitplugins.InstallManager.App;
 				PRODUCT_NAME = EvenBetterAuthorizationSample;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -750,11 +820,20 @@
 		E4ED7B9215E79B83002AD912 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = LTN37FGX4L;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "App/App-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitplugins.InstallManager.App;
 				PRODUCT_NAME = EvenBetterAuthorizationSample;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
